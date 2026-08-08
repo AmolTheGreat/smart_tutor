@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   try {
     let payload = {
-      model: "model: "qwen/qwen3.6-27b",
+      model: "llama-3.3-70b-versatile",
       // If the frontend sends chat history (messages), use it! 
       // Otherwise, fallback to the single message (for quizzes)
       messages: messages || [{ role: "user", content: message }]
